@@ -57,11 +57,14 @@ public class BirthStones {
                 birthstone = "Turquiose";
                 break;
             default:
-                System.out.println(number + " doesn't match a month");
+                month = null;
+                birthstone = null;
                 break;
         }
-
-
+        if ((month != null) && (birthstone != null))
+            System.out.println(month + "'s birthstone is " + birthstone);
+        else
+            System.out.println("I think you might be confused, " + number + " doesn't match a month.");
 
     }
 }
