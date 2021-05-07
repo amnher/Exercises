@@ -23,7 +23,7 @@ public class AddValidation {
         float perimeterOfWindow;
 
         // declare and initialize the Scanner
-        Scanner myScanner = new Scanner(System.in);
+
         AddValidation ck = new AddValidation();
 
         // get input from the user
@@ -68,16 +68,17 @@ public class AddValidation {
 
     }
 
-    float convertValidate(String input) {
+    float convertValidate(String in) {
         float num = 0;
         boolean isValid = false;
+
         Scanner sc = new Scanner(System.in);
 
         do {
             try
             {
-                input = sc.nextLine();
-                num = Float.parseFloat(input);
+                in = sc.nextLine();
+                num = Float.parseFloat(in);
                 isValid = true;
 
             } catch (NumberFormatException ex) {
