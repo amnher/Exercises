@@ -10,7 +10,7 @@ public class Test {
         try
         {
             String url = "jdbc:mysql://localhost/Movies";
-            String user = "root";
+            String user = "jr";
             String pw = "00000000";
             con = DriverManager.getConnection(url, user, pw);
             System.out.println("Success");
